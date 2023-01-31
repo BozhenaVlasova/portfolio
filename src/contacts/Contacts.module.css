@@ -1,0 +1,39 @@
+.contacts {
+    width: 100%;
+    height: 60vh;
+    background-color: #e77cb5;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    width: 500px;
+    height: 200px;
+    margin: 10px auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+input {
+    height: 30px;
+    padding: 0 10px;
+}
+
+textarea {
+    padding: 5px 10px;
+    resize: none;
+}
+
+.button {
+    width: 120px;
+    height: 40px;
+    font-size: medium;
+}
