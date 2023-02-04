@@ -1,0 +1,20 @@
+import React from 'react';
+import styles from './Projects.module.css'
+import styleContainer from '../common/styles/Container.module.css'
+import Project from "./project/Project";
+
+const Projects = () => {
+    return (
+        <div className={styles.worksBlock}>
+            <div className={`${styleContainer.container} ${styles.worksContainer}`}>
+                <h2>My Projects</h2>
+                <div className={styles.works}>
+                    <Project name={'Проект 1'} description={'Краткое описание проекта'}/>
+                    <Project name={'Проект 2'} description={'Краткое описание проекта'}/>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Projects;

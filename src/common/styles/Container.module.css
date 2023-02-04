@@ -7,4 +7,16 @@
     height: 80%;
     margin: 0 auto;
     flex-wrap: wrap;
+    gap: 10px
+}
+
+h4, h3, h2 {
+    background-color: steelblue;
+    text-align: center;
+}
+
+.button {
+    width: 120px;
+    height: 40px;
+    font-size: medium;
 }

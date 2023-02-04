@@ -4,6 +4,8 @@
     height: 450px;
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    background-color: #9c5ae3;
 }
 
 .image {
@@ -19,8 +21,15 @@
     width: 120px;
     height: 80px;
     font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #e54d9b;
 }
 
-.description {
-    margin-left: 20px;
+.title, .description {
+    margin: 0 10px;
+    background-color: #e77cb5;
 }

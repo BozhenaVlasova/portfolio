@@ -7,7 +7,7 @@ const RemoteWork = () => {
         <div className={styles.remoteWork}>
             <div className={`${styleContainer.container} ${styles.container}`}>
                 <h2>Рассматриваю варианты удаленной работы</h2>
-                <button className={styles.button}>Нанять меня</button>
+                <button className={styleContainer.button}>Нанять меня</button>
             </div>
         </div>
     );

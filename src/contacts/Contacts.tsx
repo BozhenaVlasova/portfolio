@@ -12,7 +12,7 @@ const Contacts = () => {
                     <input placeholder={'+(___)__ ___-__-__'} name={'telephone'} required/>
                     <textarea rows={7} cols={5} name={'info'} required/>
                 </form>
-                <button className={styles.button}>Отправить</button>
+                <button className={styleContainer.button}>Отправить</button>
             </div>
         </div>
     );

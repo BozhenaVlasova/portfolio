@@ -1,6 +1,5 @@
 .remoteWork {
-    width: 100%;
-    height: 30vh;
+    min-height: 30vh;
     background-color: #e3e388;
     display: flex;
     align-items: center;
@@ -11,10 +10,4 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.button {
-    width: 150px;
-    height: 80px;
-    font-size: large;
 }

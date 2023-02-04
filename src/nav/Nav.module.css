@@ -4,3 +4,8 @@
     display: flex;
     justify-content: space-between;
 }
+
+a {
+    background-color: #f8cfcf;
+    text-decoration: none;
+}
