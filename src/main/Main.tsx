@@ -7,9 +7,9 @@ const Main = () => {
         <div className={styles.main}>
             <div className={`${styleContainer.container} ${styles.container}`}>
                 <div className={styles.text}>
-                    <span>Hi There!</span>
-                    <h1>I am Bozhena Vlasova</h1>
-                    <p>A Frontend Developer</p>
+                    <h6>Hello! I am</h6>
+                    <h1>Bozhena Vlasova</h1>
+                    <p>I Am Frontend <span>Developer</span></p>
                 </div>
                 <div className={styles.photo}></div>
             </div>

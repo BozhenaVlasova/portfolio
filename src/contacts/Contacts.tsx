@@ -1,12 +1,13 @@
 import React from 'react';
 import styles from './Contacts.module.css'
 import styleContainer from '../common/styles/Container.module.css'
+import Title from "../common/components/title/Title";
 
 const Contacts = () => {
     return (
         <div className={styles.contacts}>
             <div className={`${styleContainer.container} ${styles.container}`}>
-                <h2>Контакты</h2>
+                <Title name={'Contacts'} />
                 <form className={styles.form} action={'contacts.php'}>
                     <input placeholder={'ФИО'} name={'fio'} required/>
                     <input placeholder={'+(___)__ ___-__-__'} name={'telephone'} required/>
