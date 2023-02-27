@@ -5,10 +5,10 @@ import Project from "./project/Project";
 
 const Projects = () => {
     return (
-        <div className={styles.worksBlock}>
-            <div className={`${styleContainer.container} ${styles.worksContainer}`}>
+        <div className={styles.projectsBlock}>
+            <div className={`${styleContainer.container} ${styles.projectsContainer}`}>
                 <h2>My Projects</h2>
-                <div className={styles.works}>
+                <div className={styles.projects}>
                     <Project name={'Проект 1'} description={'Краткое описание проекта'}/>
                     <Project name={'Проект 2'} description={'Краткое описание проекта'}/>
                 </div>

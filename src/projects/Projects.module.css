@@ -1,20 +1,26 @@
-.worksBlock {
+.projectsBlock {
     min-height: 100vh;
     background-color: #c28af6;
     display: flex;
     align-items: center;
 }
 
-.worksContainer {
+.projectsContainer {
     justify-content: center;
     align-items: center;
 }
 
-.works {
+.projects {
     border: 1px solid;
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 10px;
+}
+
+@media screen and (max-width: 1019px) {
+    .projects {
+        justify-content: center;
+    }
 }

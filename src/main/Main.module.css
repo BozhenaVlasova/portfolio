@@ -19,3 +19,9 @@
     height: 300px;
     background-color: #f8cfcf;
 }
+
+@media screen and (max-width: 874px) {
+    .container {
+        justify-content: center;
+    }
+}
