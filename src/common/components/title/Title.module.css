@@ -1,0 +1,43 @@
+.title {
+    margin-bottom: 35px;
+
+}
+
+.title h3 {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 30px;
+    display: inline-block;
+    vertical-align: top;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-family: 'Noto Sans', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
+}
+
+.title h3:before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    width: 60px;
+    background: #2fbf71;
+    height: 1px;
+}
+
+.title h3::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -7px;
+    left: 56px;
+    right: 0;
+    z-index: -1;
+    background: #2fbf71;
+}
