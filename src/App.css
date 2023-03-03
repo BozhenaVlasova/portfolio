@@ -1,2 +1,9 @@
 .App {
 }
+
+.information {
+    left: 250px;
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 250px);
+}
