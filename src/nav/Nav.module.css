@@ -1,11 +1,31 @@
-.nav {
-    border: 1px solid;
-    width: 600px;
-    display: flex;
-    justify-content: space-between;
-}
+/*.header {*/
+/*    width: 250px;*/
+/*    position: fixed;*/
+/*    bottom: 0;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    background: #0c0c14;*/
 
-a {
-    background-color: #f8cfcf;
-    text-decoration: none;
-}
+/*}*/
+
+/*.scrollBar {*/
+/*    height: calc(100% - 50px);*/
+/*}*/
+
+/*.socialIcons {*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    padding: 12px 0;*/
+/*    justify-content: center!important;*/
+/*    display: flex;*/
+/*    margin-bottom: 0;*/
+/*    list-style: none;*/
+/*    flex-wrap: wrap;*/
+/*}*/
+
+/*a {*/
+/*    background-color: #f8cfcf;*/
+/*    text-decoration: none;*/
+/*}*/

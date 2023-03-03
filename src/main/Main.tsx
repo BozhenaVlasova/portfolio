@@ -4,7 +4,7 @@ import styleContainer from '../common/styles/Container.module.css'
 
 const Main = () => {
     return (
-        <div className={styles.main}>
+        <div className={styles.main} id={'home'}>
             <div className={`${styleContainer.container} ${styles.container}`}>
                 <div className={styles.text}>
                     <h6>Hello! I am</h6>

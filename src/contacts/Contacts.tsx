@@ -5,7 +5,7 @@ import Title from "../common/components/title/Title";
 
 const Contacts = () => {
     return (
-        <div className={styles.contacts}>
+        <div className={styles.contacts} id={'contacts'}>
             <div className={`${styleContainer.container} ${styles.container}`}>
                 <Title name={'Contacts'} />
                 <form className={styles.form} action={'contacts.php'}>

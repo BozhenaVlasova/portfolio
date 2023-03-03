@@ -6,7 +6,7 @@ import Title from "../common/components/title/Title";
 
 const Skills = () => {
     return (
-        <div className={styles.skillsBlock}>
+        <div className={styles.skillsBlock} id={'skills'}>
             <div className={`${styleContainer.container} ${styles.skillsContainer}`}>
                 <Title name={'My Skills'}/>
                 <div className={styles.skills}>
