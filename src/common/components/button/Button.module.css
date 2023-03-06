@@ -1,0 +1,14 @@
+.buttonCV a {
+    background: #bf2fbd;
+    color: #fff;
+    box-shadow: 4px 4px #fff;
+    font-size: 14px;
+    padding: 0 25px;
+    line-height: 42px;
+    position: relative;
+    display: inline-block;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-decoration: none;
+}
