@@ -64,9 +64,9 @@
 }
 
 .pages a:active {
-    color: #2fbf71;
+    color: #bf2fbd;
     font-weight: bolder;
-    fill: #2fbf71;
+    fill: #bf2fbd;
 }
 
 .socialIcons {
@@ -85,10 +85,4 @@
 
 .socialIcons a {
     cursor: pointer;
-}
-
-img {
-    height: 20px;
-    width: 20px;
-    margin: 5px;
 }
