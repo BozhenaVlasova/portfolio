@@ -3,6 +3,8 @@ import styles from './Skills.module.css'
 import styleContainer from '../common/styles/Container.module.css'
 import Skill from "./skill/Skill";
 import Title from "../common/components/title/Title";
+import {skills} from "./MySkills";
+
 
 const Skills = () => {
     return (
@@ -10,9 +12,7 @@ const Skills = () => {
             <div className={`${styleContainer.container} ${styles.skillsContainer}`}>
                 <Title name={'My Skills'}/>
                 <div className={styles.skills}>
-                    <Skill title='React' description='Подробное описание навыка.....'/>
-                    <Skill title='Redux' description='Подробное описание навыка.....'/>
-                    <Skill title='HTML/CSS' description='Подробное описание навыка.....'/>
+                    {skills.map(sk => <Skill key={sk.id} title={sk.title} image={sk.image}/>)}
                 </div>
             </div>
         </div>

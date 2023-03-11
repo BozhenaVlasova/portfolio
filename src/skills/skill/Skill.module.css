@@ -1,18 +1,18 @@
 .skill {
-    width: 250px;
+    width: 200px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
-    background-color: #66d99c;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    box-shadow: #bf2fbd 0px 4px 18px, rgba(255, 255, 255, 0.3) 0px 1px 0px inset
 }
 
-.icon {
-    width: 60px;
-    height: 60px;
-    background-color: bisque;
-}
-
-.description {
-    background-color: #ffa4a4;
+.skill img {
+    width: 90px;
+    height: 90px;
 }
