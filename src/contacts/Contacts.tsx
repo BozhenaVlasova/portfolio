@@ -12,11 +12,10 @@ const Contacts = () => {
                 <Title name={'Contacts'}/>
                 <div className={styles.descriptionAndForm}>
                     <div className={styles.description}>
-                    <span>Do you have suggestions? Write to me, don't be shy :)</span>
+                    <span>Do you have suggestions?<br/>Write to me, don't be shy :)</span>
                         <p><img src={letter}/>dix20sept@gmail.com</p>
                     </div>
                     <div className={styles.formAndButton}>
-                        {/*<h4>Do you have suggestions? Write to me, don't be shy :)</h4>*/}
                         <form className={styles.form} action={'contacts.php'}>
                             <input placeholder={'Name*'} name={'name'} required/>
                             <input placeholder={'Email*'} name={'email'} required/>
