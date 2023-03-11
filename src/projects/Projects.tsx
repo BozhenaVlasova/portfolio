@@ -3,6 +3,7 @@ import styles from './Projects.module.css'
 import styleContainer from '../common/styles/Container.module.css'
 import Project from "./project/Project";
 import Title from "../common/components/title/Title";
+import counter from "../images/projects/counter.png"
 
 const Projects = () => {
     return (
@@ -10,8 +11,7 @@ const Projects = () => {
             <div className={`${styleContainer.container} ${styles.projectsContainer}`}>
                 <Title name={'My Projects'} />
                 <div className={styles.projects}>
-                    <Project name={'Проект 1'} description={'Краткое описание проекта'}/>
-                    <Project name={'Проект 2'} description={'Краткое описание проекта'}/>
+                    <Project name={'Counter'} description={'Краткое описание проекта'} image={counter} gitUrl={'https://github.com/BozhenaVlasova/counter2'}/>
                 </div>
             </div>
         </div>
