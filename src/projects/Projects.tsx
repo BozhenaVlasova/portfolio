@@ -3,7 +3,7 @@ import styles from './Projects.module.css'
 import styleContainer from '../common/styles/Container.module.css'
 import Project from "./project/Project";
 import Title from "../common/components/title/Title";
-import counter from "../images/projects/counter.png"
+import {projects} from "./MyProjects";
 
 const Projects = () => {
     return (
@@ -11,7 +11,7 @@ const Projects = () => {
             <div className={`${styleContainer.container} ${styles.projectsContainer}`}>
                 <Title name={'My Projects'} />
                 <div className={styles.projects}>
-                    <Project name={'Counter'} description={'Краткое описание проекта'} image={counter} gitUrl={'https://github.com/BozhenaVlasova/counter2'}/>
+                    {projects.map(pr => <Project key={pr.id} name={pr.name} description={pr.description} image={pr.image} gitUrl={pr.gitUrl}/>)}
                 </div>
             </div>
         </div>
