@@ -63,10 +63,8 @@
 
 }
 
-.pages a:active {
-    color: #bf2fbd;
+.pages a:hover {
     font-weight: bolder;
-    fill: #bf2fbd;
 }
 
 .socialIcons {
