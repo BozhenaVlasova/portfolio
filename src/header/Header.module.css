@@ -30,6 +30,7 @@
         animation: img-spin infinite 20s linear;
     }
 }
+
 @keyframes img-spin {
     from {
         transform: rotate(0deg);
@@ -48,7 +49,7 @@
     padding-top: 120px;
 }
 
-.pages a {
+.pages a{
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -60,10 +61,14 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     width: 100%;
     padding: 15px 35px;
-
+    gap: 5px;
 }
 
 .pages a:hover {
+    font-weight: bolder;
+}
+.pages a:active {
+    color: #bf2fbd;
     font-weight: bolder;
 }
 

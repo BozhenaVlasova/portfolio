@@ -4,11 +4,9 @@ import telegram from '../images/messengers/telegram.svg';
 import instagram from '../images/messengers/instagram.svg';
 import github from '../images/messengers/github.svg';
 import linkedin from '../images/messengers/linkedin.svg';
-import home from '../images/navigation/home.svg';
-import skills from '../images/navigation/skills.svg';
-import projects from '../images/navigation/projects.svg';
-import contacts from '../images/navigation/contacts.svg';
 import logo from '../images/react.svg';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faContactCard, faDatabase, faFolderOpen, faHomeUser} from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
     return (
@@ -18,10 +16,10 @@ const Header = () => {
                 <h4>Bozhena</h4>
             </div>
             <div className={styles.pages}>
-                <a href={'#home'}><img src={home}/><span>Home</span></a>
-                <a href={'#skills'}><img src={skills}/><span>Skills</span></a>
-                <a href={'#projects'}><img src={projects}/><span>Projects</span></a>
-                <a href={'#contacts'}><img src={contacts}/><span>Contacts</span></a>
+                    <a href={'#home'}><FontAwesomeIcon icon={faHomeUser}/><span>Home</span></a>
+                    <a href={'#skills'} className={styles.active}><FontAwesomeIcon icon={faDatabase}/><span>Skills</span></a>
+                    <a href={'#projects'} className={styles.active}><FontAwesomeIcon icon={faFolderOpen}/><span>Projects</span></a>
+                    <a href={'#contacts'} className={styles.active}><FontAwesomeIcon icon={faContactCard}/><span>Contacts</span></a>
             </div>
             <div className={styles.socialIcons}>
                 <a href={'https://t.me/bozhena_vl'} target={'_blank'}>
