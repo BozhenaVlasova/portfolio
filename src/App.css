@@ -8,6 +8,12 @@
     width: calc(100% - 250px);
     /*background-color: #10101a;*/
 }
+@media (max-width: 1200px) {
+    .information {
+        left: 0;
+        width: 100%;
+    }
+}
 
 img {
     height: 20px;
