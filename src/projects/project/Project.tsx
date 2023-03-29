@@ -13,7 +13,7 @@ const Project = (props: WorkPropsType) => {
         <div className={styles.work} style={{backgroundImage: "url("+props.image+")"}}>
             <div className={styles.info}>
                 <h5 className={styles.title}>{props.name}</h5>
-                <span className={styles.description}>{props.description}</span>
+                {/*<span className={styles.description}>{props.description}</span>*/}
             </div>
             <a href={props.gitUrl} className={styles.button} target={'_blank'}>Open</a>
         </div>

@@ -11,7 +11,7 @@ const Main = () => {
                     <h6>Hello! I am</h6>
                     <h1>Bozhena Vlasova</h1>
                     <p>I Am Frontend <span className={styles.animated}>Developer</span></p>
-                    <Button name={'Dowloand CV'} href={'cv'} target={'_blank'} download={'BozhenaVlasovaCV'}/>
+                    <Button name={'Dowloand CV'}/>
                 </div>
                 <div className={styles.photo}></div>
             </div>
