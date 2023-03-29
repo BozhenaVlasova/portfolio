@@ -1,0 +1,53 @@
+.work {
+  width: 350px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  z-index: 10;
+  background-size: cover;
+  background-position: center;
+
+  .info {
+    padding: 20px;
+    z-index: 1;
+    background: #0b0b13;
+    text-align: center;
+    opacity: 0;
+    transition: ease all 0.35s;
+    width: 70%;
+    margin: 20px;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    .title {
+      font-size: 22px;
+      color: #fff;
+      margin: 0 0 4px;
+    }
+
+    .description {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  .button {
+    padding: 20px;
+    z-index: 1;
+    background: #0b0b13;
+    text-align: center;
+    opacity: 0;
+    transition: ease all 0.35s;
+    width: auto;
+    margin: 20px;
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

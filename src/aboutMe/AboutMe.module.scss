@@ -1,0 +1,59 @@
+.meBlock {
+  min-height: 80vh;
+  background-color: #10101a;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+
+  .meContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+    @media screen and (max-width: 1029px) {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .photo {
+      width: 350px;
+      height: 350px;
+      background-image: url("../images/aboutMe.jpg");
+      vertical-align: middle;
+      border-style: none;
+      border-radius: 5%;
+      background-position: center;
+      background-size: cover;
+      @media screen and (max-width: 490px) {
+        max-width: 100%;
+      }
+    }
+
+    .titleAndInfo {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      justify-content: space-between;
+      @media screen and (max-width: 490px) {
+        max-width: 100%;
+      }
+
+      .info {
+        & h2 {
+          color: #fff;
+          margin-bottom: 25px;
+          font-weight: 500;
+          line-height: 1.2;
+        }
+
+        & p {
+          color: rgba(255, 255, 255, 0.8);
+          line-height: 1.7;
+          font-size: 15px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}

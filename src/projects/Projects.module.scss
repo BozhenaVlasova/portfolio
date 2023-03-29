@@ -1,0 +1,25 @@
+.projectsBlock {
+  min-height: 100vh;
+  background-color: #10101a;
+  display: flex;
+  align-items: center;
+
+  .projectsContainer {
+    align-items: center;
+    padding: 40px 0;
+    @media screen and (max-width: 1180px) {
+      width: 80%;
+    }
+
+    .projects {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 10px;
+      @media screen and (max-width: 1019px) {
+        justify-content: center;
+      }
+    }
+  }
+}

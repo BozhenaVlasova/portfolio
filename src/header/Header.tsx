@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Header.module.css';
+import styles from './Header.module.scss';
 import telegram from '../images/messengers/telegram.svg';
 import instagram from '../images/messengers/instagram.svg';
 import github from '../images/messengers/github.svg';
@@ -12,7 +12,7 @@ const Header = () => {
 
     return (
         <header className={`${styles.header}`}>
-            <div className={`${styles.mobHeader} ${styles.menuOpen}`}>
+            <div className={`${styles.mobHeader}`}>
                 <button className={styles.togglerMenuOpen}>
                     <span></span>
                     <span></span>

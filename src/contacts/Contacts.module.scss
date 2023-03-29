@@ -1,0 +1,88 @@
+.contacts {
+  min-height: 60vh;
+  background-color: #10101a;
+  display: flex;
+  align-items: center;
+
+  .container {
+    flex-direction: column;
+    margin-bottom: 20px;
+    @media screen and (max-width: 1180px) {
+      width: 80%;
+    }
+
+    .descriptionAndForm {
+      display: flex;
+      gap: 20px;
+      @media screen and (max-width: 1045px) {
+        flex-direction: column;
+      }
+
+      .description {
+        align-self: flex-start;
+        padding: 20px;
+        color: #fff;
+        font-size: 18px;
+        background-color: black;
+        @media screen and (max-width: 1045px) {
+          width: 100%;
+          margin: 10px auto;
+        }
+
+        & p {
+          font-weight: 500;
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      .formAndButton {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid;
+        width: 80%;
+        padding: 20px;
+        background-color: black;
+        @media screen and (max-width: 1045px) {
+          width: 100%;
+        }
+
+        .form {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          margin: 10px auto;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          gap: 10px;
+          @media screen and (max-width: 536px) {
+            justify-content: center;
+            width: 100%;
+          }
+
+          input {
+            color: #fff;
+            background: none;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 0;
+            box-shadow: none;
+            font-size: 14px;
+            height: calc(2em + 0.75rem + 2px);
+            padding-left: 5px;
+          }
+
+          textarea {
+            color: #fff;
+            background: none;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 0;
+            box-shadow: none;
+            font-size: 14px;
+            height: auto;
+            padding-left: 5px;
+          }
+        }
+      }
+    }
+  }
+}
