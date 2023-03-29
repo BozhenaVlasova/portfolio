@@ -1,8 +1,6 @@
 .container {
-    /*border: 1px solid;*/
     display: flex;
     justify-content: space-between;
-    /*align-items: center;*/
     width: 70%;
     height: 80%;
     margin: 0 auto;
@@ -10,13 +8,14 @@
     gap: 10px
 }
 
-/*h4, h3, h2 {*/
-/*    background-color: steelblue;*/
-/*    text-align: center;*/
-/*}*/
-
 .button {
     width: 120px;
     height: 40px;
     font-size: medium;
+}
+
+@media screen and (min-width: 1180px) {
+    .container {
+        width: 90%;
+    }
 }

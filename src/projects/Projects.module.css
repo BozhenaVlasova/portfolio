@@ -6,12 +6,11 @@
 }
 
 .projectsContainer {
-    /*justify-content: center;*/
     align-items: center;
+    padding: 40px 0;
 }
 
 .projects {
-    /*border: 1px solid;*/
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -22,5 +21,11 @@
 @media screen and (max-width: 1019px) {
     .projects {
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .projectsContainer {
+        width: 80%;
     }
 }

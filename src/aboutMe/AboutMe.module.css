@@ -1,9 +1,10 @@
 .meBlock {
     min-height: 80vh;
-    width: 100%;
+    /*width: 100%;*/
     background-color: #10101a;
     display: flex;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .meContainer {
@@ -11,6 +12,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 40px 0;
 }
 
 .titleAndInfo {
@@ -43,4 +45,21 @@
     border-radius: 5%;
     background-position: center;
     background-size: cover;
+}
+
+@media screen and (max-width: 1029px) {
+    .meContainer {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 490px) {
+    .photo {
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 490px) {
+    .titleAndInfo {
+        max-width: 100%;
+    }
 }

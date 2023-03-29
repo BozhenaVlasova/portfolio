@@ -76,3 +76,24 @@ textarea {
         width: 100%;
     }
 }
+@media screen and (max-width: 1045px) {
+    .descriptionAndForm {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 1045px) {
+    .description {
+        width: 100%;
+        margin: 10px auto;
+    }
+}
+@media screen and (max-width: 1045px) {
+    .formAndButton {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1180px) {
+    .container {
+        width: 80%;
+    }
+}
