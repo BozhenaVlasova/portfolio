@@ -24,11 +24,14 @@ const Header = () => {
                 <h4>Bozhena</h4>
             </div>
             <div className={styles.pages}>
-                    <a href={'#home'}><FontAwesomeIcon icon={faHomeUser}/><span>Home</span></a>
-                    <a href={'#aboutMe'}><FontAwesomeIcon icon={faUser}/><span>About Me</span></a>
-                    <a href={'#skills'} className={styles.active}><FontAwesomeIcon icon={faDatabase}/><span>Skills</span></a>
-                    <a href={'#projects'} className={styles.active}><FontAwesomeIcon icon={faFolderOpen}/><span>Projects</span></a>
-                    <a href={'#contacts'} className={styles.active}><FontAwesomeIcon icon={faContactCard}/><span>Contacts</span></a>
+                <a href={'#home'}><FontAwesomeIcon icon={faHomeUser}/><span>Home</span></a>
+                <a href={'#aboutMe'}><FontAwesomeIcon icon={faUser}/><span>About Me</span></a>
+                <a href={'#skills'}><FontAwesomeIcon
+                    icon={faDatabase}/><span>Skills</span></a>
+                <a href={'#projects'}><FontAwesomeIcon
+                    icon={faFolderOpen}/><span>Projects</span></a>
+                <a href={'#contacts'}><FontAwesomeIcon
+                    icon={faContactCard}/><span>Contacts</span></a>
             </div>
             <div className={styles.socialIcons}>
                 <a href={'https://t.me/bozhena_vl'} target={'_blank'}>
