@@ -37,8 +37,8 @@
       flex-direction: column;
       width: 50%;
       justify-content: space-between;
-      @media screen and (max-width: 490px) {
-        max-width: 100%;
+      @media screen and (max-width: 710px) {
+        width: 100%;
       }
 
       .info {
