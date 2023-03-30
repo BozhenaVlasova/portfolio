@@ -1,6 +1,8 @@
+@import "../common/styles/sass/variables";
+
 .contacts {
   min-height: 60vh;
-  background-color: #10101a;
+  background-color: $bgColor;
   display: flex;
   align-items: center;
 
@@ -21,9 +23,9 @@
       .description {
         align-self: flex-start;
         padding: 20px;
-        color: #fff;
+        color: $mainTextColor;
         font-size: 18px;
-        background-color: black;
+        background-color: $bgSecondaryColor;
         @media screen and (max-width: 1045px) {
           width: 100%;
           margin: 10px auto;
@@ -42,7 +44,7 @@
         border: 1px solid;
         width: 80%;
         padding: 20px;
-        background-color: black;
+        background-color: $bgSecondaryColor;
         @media screen and (max-width: 1045px) {
           width: 100%;
         }
@@ -61,7 +63,7 @@
           }
 
           input {
-            color: #fff;
+            color: $mainTextColor;
             background: none;
             border: 1px solid rgba(255, 255, 255, 0.3);
             border-radius: 0;
@@ -72,7 +74,7 @@
           }
 
           textarea {
-            color: #fff;
+            color: $mainTextColor;
             background: none;
             border: 1px solid rgba(255, 255, 255, 0.3);
             border-radius: 0;

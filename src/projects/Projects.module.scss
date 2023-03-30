@@ -1,6 +1,8 @@
+@import "../common/styles/sass/variables";
+
 .projectsBlock {
   min-height: 100vh;
-  background-color: #10101a;
+  background-color: $bgColor;
   display: flex;
   align-items: center;
 

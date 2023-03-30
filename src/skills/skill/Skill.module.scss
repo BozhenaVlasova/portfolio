@@ -1,3 +1,5 @@
+@import "../../common/styles/sass/variables";
+
 .skill {
   width: 160px;
   height: 160px;
@@ -6,10 +8,10 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: black;
+  background-color: $bgSecondaryColor;
   border-radius: 50%;
-  color: white;
-  box-shadow: #bf2fbd 0px 4px 18px, rgba(255, 255, 255, 0.3) 0px 1px 0px inset;
+  color: $mainTextColor;
+  box-shadow: $primaryColor 0px 4px 18px, rgba(255, 255, 255, 0.3) 0px 1px 0px inset;
 
   & img {
     width: 60px;

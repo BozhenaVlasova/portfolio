@@ -1,6 +1,8 @@
+@import "../common/styles/sass/variables";
+
 .meBlock {
   min-height: 80vh;
-  background-color: #10101a;
+  background-color: $bgColor;
   display: flex;
   align-items: center;
   box-sizing: border-box;
@@ -41,7 +43,7 @@
 
       .info {
         & h2 {
-          color: #fff;
+          color: $mainTextColor;
           margin-bottom: 25px;
           font-weight: 500;
           line-height: 1.2;

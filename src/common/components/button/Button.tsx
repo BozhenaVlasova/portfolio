@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "../../../common/components/button/Button.module.css";
+import styles from "./Button.module.scss";
 
 type ButtonType = {
     name: string

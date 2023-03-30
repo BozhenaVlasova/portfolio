@@ -1,3 +1,5 @@
+@import "../../common/styles/sass/variables";
+
 .work {
   width: 350px;
   height: 250px;
@@ -12,7 +14,7 @@
   .info {
     padding: 20px;
     z-index: 1;
-    background: #0b0b13;
+    background: $bgSecondaryColor;
     text-align: center;
     opacity: 0;
     transition: ease all 0.35s;
@@ -25,7 +27,7 @@
 
     .title {
       font-size: 22px;
-      color: #fff;
+      color: $mainTextColor;
       margin: 0 0 4px;
     }
 
@@ -37,14 +39,14 @@
   .button {
     padding: 20px;
     z-index: 1;
-    background: #0b0b13;
+    background: $bgSecondaryColor;
     text-align: center;
     opacity: 0;
     transition: ease all 0.35s;
     width: auto;
     margin: 20px;
     text-decoration: none;
-    color: #fff;
+    color: $mainTextColor;
 
     &:hover {
       opacity: 1;
