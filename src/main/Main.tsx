@@ -1,9 +1,10 @@
 import React from 'react';
-import styles from './Main.module.scss'
-import styleContainer from '../common/styles/Container.module.css'
+import styles from './Main.module.scss';
+import styleContainer from '../common/styles/Container.module.css';
 import Button from "../common/components/button/Button";
 import {Fade} from "react-awesome-reveal";
 import ReactTypingEffect from 'react-typing-effect';
+import {Tilt} from 'react-tilt';
 
 const Main = () => {
     return (
@@ -25,7 +26,9 @@ const Main = () => {
                     </div>
                 </Fade>
                 <Fade big triggerOnce>
-                    <div className={styles.photo}></div>
+                    <Tilt>
+                        <div className={styles.photo}></div>
+                    </Tilt>
                 </Fade>
             </div>
         </div>

@@ -7842,6 +7842,11 @@ react-scripts@5.0.1:
   optionalDependencies:
     fsevents "^2.3.2"
 
+react-tilt@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/react-tilt/-/react-tilt-1.0.2.tgz#89e1749939275204ebbc04565778abf972196cbe"
+  integrity sha512-21tUUsmuw5id/6NDtKqwYTG4taVnw+BoUwIG6YsgPC9GI6cx4BnBuSqgriQYAYcv3bdGNzecaBL+rvQRAm28bg==
+
 react-tsparticles@^2.9.3:
   version "2.9.3"
   resolved "https://registry.yarnpkg.com/react-tsparticles/-/react-tsparticles-2.9.3.tgz#bfbac7fe2e13e010131624c52e1a25b3a3e50cbb"
