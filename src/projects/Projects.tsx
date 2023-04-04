@@ -4,16 +4,20 @@ import styleContainer from '../common/styles/Container.module.css'
 import Project from "./project/Project";
 import Title from "../common/components/title/Title";
 import {projects} from "./MyProjects";
+import {Fade} from "react-awesome-reveal";
 
 const Projects = () => {
     return (
         <div className={styles.projectsBlock} id={'projects'}>
-            <div className={`${styleContainer.container} ${styles.projectsContainer}`}>
-                <Title name={'My Projects'} />
-                <div className={styles.projects}>
-                    {projects.map(pr => <Project key={pr.id} name={pr.name} description={pr.description} image={pr.image} gitUrl={pr.gitUrl}/>)}
+            <Fade direction={"up"} triggerOnce>
+                <div className={`${styleContainer.container} ${styles.projectsContainer}`}>
+                    <Title name={'My Projects'}/>
+                    <div className={styles.projects}>
+                        {projects.map(pr => <Project key={pr.id} name={pr.name} description={pr.description}
+                                                     image={pr.image} gitUrl={pr.gitUrl}/>)}
+                    </div>
                 </div>
-            </div>
+            </Fade>
         </div>
     );
 };
