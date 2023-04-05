@@ -11,8 +11,7 @@ const AboutMe = () => {
         <div className={styles.meBlock} id={'aboutMe'}>
             <Fade direction={"up"} triggerOnce>
                 <div className={`${styleContainer.container} ${styles.meContainer}`}>
-                    <Tilt>
-                        <div className={styles.photo}></div>
+                    <Tilt className={styles.photo}>
                     </Tilt>
                     <div className={styles.titleAndInfo}>
                         <Title name={'About Me.'}/>

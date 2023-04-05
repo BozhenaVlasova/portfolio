@@ -10,8 +10,8 @@ const Main = () => {
     return (
         <div className={styles.main} id={'home'}>
             <div className={`${styleContainer.container} ${styles.container}`}>
-                <Fade direction={"up"} triggerOnce>
-                    <div className={styles.text}>
+                <Fade direction={"up"} triggerOnce className={styles.text}>
+                    <div>
                         <h6>Hello! I am</h6>
                         <h1>Bozhena Vlasova</h1>
                         <p>I Am <span className={styles.animated}>
@@ -25,9 +25,8 @@ const Main = () => {
                         <Button name={'Dowloand CV'}/>
                     </div>
                 </Fade>
-                <Fade big triggerOnce>
+                <Fade big triggerOnce className={styles.photo}>
                     <Tilt>
-                        <div className={styles.photo}></div>
                     </Tilt>
                 </Fade>
             </div>
