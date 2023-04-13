@@ -6,6 +6,9 @@ import Button from "../common/components/button/Button";
 import {Fade} from "react-awesome-reveal";
 import {Tilt} from 'react-tilt';
 import {ThemeContext} from "./../App";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faContactCard} from "@fortawesome/free-solid-svg-icons";
+import {Link} from "react-scroll";
 
 const AboutMe = () => {
     const {switchColor} = useContext(ThemeContext);
@@ -23,7 +26,10 @@ const AboutMe = () => {
                                 I code and create web elements for amazing people around the world. I like work with new
                                 people. New people new Experiences.</p>
                         </div>
-                        <Button name={'Contact Me'} href={'#contacts'}/>
+                        <Link to="contacts" spy={true} smooth={true} offset={0}
+                              duration={500}>
+                            <Button name={'Contact Me'} href={'#contacts'}/>
+                        </Link>
                     </div>
                 </div>
             </Fade>

@@ -9,6 +9,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faContactCard, faDatabase, faFolderOpen, faHomeUser, faUser} from '@fortawesome/free-solid-svg-icons';
 import {Link} from 'react-scroll';
 import {ThemeContext} from "./../App";
+import NavBurger from "./NavBurger";
 
 const Header = () => {
     const {switchColor} = useContext(ThemeContext);
@@ -19,13 +20,7 @@ const Header = () => {
 
     return (
         <>
-            <div className={`${styles.burgerNav}`}>
-                <button className={styles.togglerMenuOpen} onClick={onClickBurger}>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
+            <NavBurger onClickBurger={onClickBurger}/>
             <header className={menuIsOpen
                     ? `${styles.header} ${styles.show} ${styles[switchColor]}`
                     : `${styles.header} ${styles[switchColor]}`}>
