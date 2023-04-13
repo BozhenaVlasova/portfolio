@@ -29,8 +29,8 @@ const Main = () => {
                         <Button name={'Dowloand CV'} href={'./CV_Bozhena_Vlasova.pdf'} download={'./CV_Bozhena_Vlasova.pdf'}/>
                     </div>
                 </Fade>
-                <Fade big triggerOnce >
-                    <Tilt className={styles.photo}>
+                <Fade big triggerOnce className={styles.photo}>
+                    <Tilt >
                     </Tilt>
                 </Fade>
             </div>
