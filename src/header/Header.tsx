@@ -29,23 +29,23 @@ const Header = () => {
                     <h4>Bozhena</h4>
                 </div>
                 <div className={styles.pages}>
-                    <Link activeClass={styles.active} to="home" spy={true} smooth={true} offset={0} duration={500}>
+                    <Link activeClass={styles.active} to="home" spy={true} smooth={true} offset={-50} duration={500}>
                         <FontAwesomeIcon icon={faHomeUser}/>
                         Home
                     </Link>
-                    <Link activeClass={styles.active} to="aboutMe" spy={true} smooth={true} offset={0} duration={500}>
+                    <Link activeClass={styles.active} to="aboutMe" spy={true} smooth={true} offset={-50} duration={500}>
                         <FontAwesomeIcon icon={faUser}/>
                         About Me
                     </Link>
-                    <Link activeClass={styles.active} to="skills" spy={true} smooth={true} offset={0} duration={500}>
+                    <Link activeClass={styles.active} to="skills" spy={true} smooth={true} offset={-50} duration={500}>
                         <FontAwesomeIcon icon={faDatabase}/>
                         Skills
                     </Link>
-                    <Link activeClass={styles.active} to="projects" spy={true} smooth={true} offset={0} duration={500}>
+                    <Link activeClass={styles.active} to="projects" spy={true} smooth={true} offset={-50} duration={500}>
                         <FontAwesomeIcon icon={faFolderOpen}/>
                         Projects
                     </Link>
-                    <Link activeClass={styles.active} to="contacts" spy={true} smooth={true} offset={0} duration={500}>
+                    <Link activeClass={styles.active} to="contacts" spy={true} smooth={true} offset={-50} duration={500}>
                         <FontAwesomeIcon icon={faContactCard}/>
                         Contacts
                     </Link>
