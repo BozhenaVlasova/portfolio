@@ -1,8 +1,15 @@
 @import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+.dark {
+  @include onlyColorBackground($bgColor)
+}
+.light {
+  @include onlyColorBackground($bgLightColor)
+}
 
 .projectsBlock {
   min-height: 100vh;
-  background-color: $bgColor;
   display: flex;
   align-items: center;
 

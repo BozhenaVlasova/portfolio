@@ -1,8 +1,15 @@
 @import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+.dark {
+  @include switchColor($bgColor, $mainTextColor)
+}
+.light {
+  @include switchColor($bgLightColor, $mainTextColorDark)
+}
 
 .main {
   min-height: 100vh;
-  background-color: $bgColor;
   display: flex;
   align-items: center;
   padding: 100px 0;
@@ -21,6 +28,47 @@
       align-items: center;
     }
 
+    .dark {
+      position: fixed;
+      top: 25px;
+      right: 25px;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      background: $mainTextColor;
+      color: $bgColor;
+      text-align: center;
+      border-radius: 50%;
+      z-index: 1111;
+      cursor: pointer;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+
+      .moon {
+        font-size: 20px;
+
+      }
+    }
+    .light {
+      position: fixed;
+      top: 25px;
+      right: 25px;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      background: $bgColor;
+      color: $mainTextColor;
+      text-align: center;
+      border-radius: 50%;
+      z-index: 1111;
+      cursor: pointer;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+      .moon {
+        font-size: 20px;
+      }
+    }
+
     .text {
       display: flex;
       flex-direction: column;
@@ -37,7 +85,6 @@
       }
 
       & h6 {
-        color: $mainTextColor;
         font-size: 25px;
         font-weight: 500;
         margin: 0 0 20px;
@@ -48,11 +95,9 @@
         font-weight: 700;
         line-height: 1;
         margin: 0 0 20px;
-        color: $mainTextColor;
       }
 
       & p {
-        color: $mainTextColor;
         font-weight: 500;
         font-size: 18px;
         margin-bottom: 25px;

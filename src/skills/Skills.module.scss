@@ -1,9 +1,16 @@
 @import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+.dark {
+  @include onlyColorBackground($bgColor)
+}
+.light {
+  @include onlyColorBackground($bgLightColor)
+}
 
 .skillsBlock {
   min-height: 80vh;
   width: 100%;
-  background-color: $bgColor;
   display: flex;
   align-items: center;
 

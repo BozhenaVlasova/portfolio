@@ -1,10 +1,17 @@
 @import "../../styles/sass/variables";
+@import "../../styles/sass/mixins";
+
+.dark {
+  @include colorText($mainTextColor)
+}
+.light {
+  @include colorText($mainTextColorDark)
+}
 
 .title {
   margin-bottom: 35px;
 
   & h3 {
-    color: $mainTextColor;
     margin: 0;
     position: relative;
     z-index: 1;

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import styles from './Header.module.scss';
 import telegram from '../images/messengers/telegram.svg';
 import instagram from '../images/messengers/instagram.svg';
@@ -8,8 +8,10 @@ import logo from '../images/react.svg';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faContactCard, faDatabase, faFolderOpen, faHomeUser, faUser} from '@fortawesome/free-solid-svg-icons';
 import {Link} from 'react-scroll';
+import {ThemeContext} from "./../App";
 
 const Header = () => {
+    const {switchColor} = useContext(ThemeContext);
     let [menuIsOpen, setMenuIsOpen] = useState(false)
     const onClickBurger = () => {
         setMenuIsOpen(!menuIsOpen)
@@ -24,8 +26,10 @@ const Header = () => {
                     <span></span>
                 </button>
             </div>
-            <header className={menuIsOpen ? `${styles.header} ${styles.show}` : `${styles.header}`}>
-                <div className={styles.h1Top}>
+            <header className={menuIsOpen
+                    ? `${styles.header} ${styles.show} ${styles[switchColor]}`
+                    : `${styles.header} ${styles[switchColor]}`}>
+                <div className={switchColor==='dark' ? styles.h1Top : `${styles.h1Top} ${styles.h1TopColorLightTheme}`}>
                     <img className={styles.img} src={logo}/>
                     <h4>Bozhena</h4>
                 </div>

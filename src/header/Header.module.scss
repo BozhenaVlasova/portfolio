@@ -1,4 +1,18 @@
 @import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+.dark {
+  @include switchColor($bgSecondaryColor, $mainTextColor)
+}
+.light {
+  @include switchColor($bgLightSecondaryColor, $textSecondaryColor)
+}
+.h1TopColorLightTheme {
+  color: $textSecondaryColor;
+}
+.h1TopColorDarkTheme {
+  color: rgba(255, 255, 255, 0.8);
+}
 
 .header {
   width: 250px;
@@ -6,7 +20,6 @@
   bottom: 0;
   top: 0;
   left: 0;
-  background-color: $bgSecondaryColor;
   &.show {
     transform: translate(0, 0);
     transition: 0.35s;
@@ -24,7 +37,6 @@
     align-items: center;
     position: relative;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.8);
     margin-top: 25px;
 
     .img {
@@ -62,9 +74,8 @@
       cursor: pointer;
       font-family: 'Noto Sans', sans-serif;
       text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.8);
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      border-top: 1px solid rgba($textSecondaryColor, 0.3);
+      border-bottom: 1px solid rgba($textSecondaryColor, 0.3);
       width: 100%;
       padding: 15px 35px;
       gap: 5px;

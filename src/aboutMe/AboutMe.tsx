@@ -1,14 +1,16 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import styles from './AboutMe.module.scss';
 import styleContainer from '../common/styles/Container.module.css';
 import Title from "../common/components/title/Title";
 import Button from "../common/components/button/Button";
 import {Fade} from "react-awesome-reveal";
 import {Tilt} from 'react-tilt';
+import {ThemeContext} from "./../App";
 
 const AboutMe = () => {
+    const {switchColor} = useContext(ThemeContext);
     return (
-        <div className={styles.meBlock} id={'aboutMe'}>
+        <div className={`${styles.meBlock} ${styles[switchColor]}`} id={'aboutMe'}>
             <Fade direction={"up"} triggerOnce>
                 <div className={`${styleContainer.container} ${styles.meContainer}`}>
                     <Tilt className={styles.photo}>

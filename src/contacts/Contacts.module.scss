@@ -1,8 +1,21 @@
 @import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+.dark {
+  @include onlyColorBackground($bgColor);
+}
+.darkDescriptionAndForm {
+  @include switchColor($bgSecondaryColor, $mainTextColor);
+}
+.light {
+  @include onlyColorBackground($bgLightColor);
+}
+.lightDescriptionAndForm {
+  @include switchColor($bgLightSecondaryColor, $mainTextColorDark);
+}
 
 .contacts {
   min-height: 60vh;
-  background-color: $bgColor;
   display: flex;
   align-items: center;
 
@@ -23,28 +36,27 @@
       .description {
         align-self: flex-start;
         padding: 20px;
-        color: $mainTextColor;
         font-size: 18px;
-        background-color: $bgSecondaryColor;
         @media screen and (max-width: 1045px) {
           width: 100%;
           margin: 10px auto;
+          text-align: center;
         }
 
         & p {
           font-weight: 500;
           display: flex;
           align-items: center;
+          text-align: center;
+          justify-content: center;
         }
       }
 
       .formAndButton {
         display: flex;
         flex-direction: column;
-        border: 1px solid;
         width: 80%;
         padding: 20px;
-        background-color: $bgSecondaryColor;
         @media screen and (max-width: 1045px) {
           width: 100%;
         }
@@ -63,9 +75,8 @@
           }
 
           input {
-            color: $mainTextColor;
             background: none;
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba($textSecondaryColor, 0.3);
             border-radius: 0;
             box-shadow: none;
             font-size: 14px;
@@ -74,9 +85,8 @@
           }
 
           textarea {
-            color: $mainTextColor;
             background: none;
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba($textSecondaryColor, 0.3);
             border-radius: 0;
             box-shadow: none;
             font-size: 14px;

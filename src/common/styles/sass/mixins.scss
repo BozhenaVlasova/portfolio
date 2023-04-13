@@ -1,0 +1,18 @@
+@import "./variables";
+
+@mixin switchColor($background, $color) {
+  background: $background;
+  color: $color;
+}
+
+@mixin colorMainButton($boxShadow) {
+  box-shadow: 4px 4px $boxShadow;
+}
+
+@mixin onlyColorBackground($background) {
+  background: $background;
+}
+
+@mixin colorText($textColor) {
+  color: $textColor;
+}

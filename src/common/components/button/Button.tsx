@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import styles from "./Button.module.scss";
+import {ThemeContext} from "./../../../App";
 
 type ButtonType = {
     name: string
@@ -9,9 +10,11 @@ type ButtonType = {
 }
 
 const Button: React.FC<ButtonType> = (props) => {
+    const {switchColor} = useContext(ThemeContext)
     return (
         <div className={styles.buttonCV}>
-            <a href={props.href} download={props.download} target={props.target}>{props.name}</a>
+            <a href={props.href} download={props.download} target={props.target}
+               className={styles[switchColor]}>{props.name}</a>
         </div>
     );
 };

@@ -1,9 +1,16 @@
-@import "../../styles/sass/variables.scss";
+@import "../../styles/sass/variables";
+@import "../../styles/sass/mixins";
+
+.dark {
+    @include colorMainButton($mainTextColor)
+}
+.light {
+    @include colorMainButton($mainTextColorDark)
+}
 
 .buttonCV a {
     background: $primaryColor;
     color: $mainTextColor;
-    box-shadow: 4px 4px $mainTextColor;
     font-size: 14px;
     padding: 0 25px;
     line-height: 42px;
