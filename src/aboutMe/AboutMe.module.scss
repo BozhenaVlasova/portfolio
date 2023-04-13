@@ -4,17 +4,20 @@
 .dark {
   @include onlyColorBackground($bgColor);
   @include colorText($mainTextColor);
-  @include colorText(rgba(255, 255, 255, 0.8));
+  p {
+    @include colorText(rgba(255, 255, 255, 0.8));
+  }
 }
 .light{
   @include onlyColorBackground($bgLightColor);
   @include colorText($mainTextColorDark);
-  @include colorText($textSecondaryColor);
+  p {
+    @include colorText($textSecondaryColor);
+  }
 }
 
 .meBlock {
   min-height: 80vh;
-  //background-color: $bgColor;
   display: flex;
   align-items: center;
   box-sizing: border-box;
@@ -55,14 +58,12 @@
 
       .info {
         & h2 {
-          //color: $mainTextColor;
           margin-bottom: 25px;
           font-weight: 500;
           line-height: 1.2;
         }
 
         & p {
-          //color: rgba(255, 255, 255, 0.8);
           line-height: 1.7;
           font-size: 15px;
           font-weight: 300;
