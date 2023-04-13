@@ -26,7 +26,8 @@ const Main = () => {
                                                eraseDelay={2000}/>
                         </span></p>
 
-                        <Button name={'Dowloand CV'} href={'./CV_Bozhena_Vlasova.pdf'} download={'./CV_Bozhena_Vlasova.pdf'}/>
+                        <Button name={'Dowloand CV'}
+                                href={'https://github.com/BozhenaVlasova/cv-folder/raw/main/CV_Bozhena_Vlasova.pdf'}/>
                     </div>
                 </Fade>
                 <Fade big triggerOnce className={styles.photo}>
