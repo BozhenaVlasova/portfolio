@@ -11,14 +11,14 @@ const Projects = () => {
     const {switchColor} = useContext(ThemeContext);
     return (
         <div className={`${styles.projectsBlock} ${styles[switchColor]}`} id={'projects'}>
-            <Fade direction={"up"} triggerOnce>
-                <div className={`${styleContainer.container} ${styles.projectsContainer}`}>
+            <Fade direction={"up"} triggerOnce className={`${styleContainer.container} ${styles.projectsContainer}`}>
+                <>
                     <Title name={'My Projects'}/>
                     <div className={styles.projects}>
                         {projects.map(pr => <Project key={pr.id} name={pr.name} description={pr.description}
                                                      image={pr.image} gitUrl={pr.gitUrl}/>)}
                     </div>
-                </div>
+                </>
             </Fade>
         </div>
     );

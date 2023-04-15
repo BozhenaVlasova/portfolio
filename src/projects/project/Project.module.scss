@@ -1,30 +1,24 @@
 @import "../../common/styles/sass/variables";
 
-.work {
-  width: 350px;
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  z-index: 10;
-  background-size: cover;
-  background-position: center;
+.project {
+    width: 350px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    z-index: 10;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s ease;
 
   .info {
     padding: 20px;
     z-index: 1;
     background: $bgSecondaryColor;
     text-align: center;
-    opacity: 0;
-    transition: ease all 0.35s;
-    width: 70%;
     margin: 20px;
-
-    &:hover {
-      opacity: 1;
-    }
 
     .title {
       font-size: 22px;
@@ -36,7 +30,8 @@
       color: rgba(255, 255, 255, 0.6);
     }
   }
-  .buttons{
+
+  .buttons {
     display: flex;
 
     .button {
@@ -44,16 +39,10 @@
       z-index: 1;
       background: $bgSecondaryColor;
       text-align: center;
-      opacity: 0;
-      transition: ease all 0.35s;
       width: auto;
       margin: 20px;
       text-decoration: none;
       color: $mainTextColor;
-
-      &:hover {
-        opacity: 1;
-      }
     }
   }
 
