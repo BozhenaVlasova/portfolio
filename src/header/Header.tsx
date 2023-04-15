@@ -60,7 +60,7 @@ const Header = () => {
                     <a href={'https://github.com/BozhenaVlasova'} target={'_blank'}>
                         <img src={github} alt={'github'}/>
                     </a>
-                    <a href={'#'} target={'_blank'}>
+                    <a href={'https://www.linkedin.com/in/bozhena-vlasova/'} target={'_blank'}>
                         <img src={linkedin} alt={'linkedin'}/>
                     </a>
                 </div>
