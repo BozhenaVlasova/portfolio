@@ -1,17 +1,17 @@
 @import "../../common/styles/sass/variables";
 
 .project {
-    width: 350px;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    z-index: 10;
-    background-size: cover;
-    background-position: center;
-    transition: all 0.5s ease;
+  width: 350px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  z-index: 10;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease;
 
   .info {
     padding: 20px;
@@ -45,5 +45,4 @@
       color: $mainTextColor;
     }
   }
-
 }

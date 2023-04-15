@@ -18,13 +18,13 @@ const Main = () => {
                     <div>
                         <h6>Hello! I am</h6>
                         <h1>Bozhena Vlasova</h1>
-                        <p>I Am <span className={styles.animated}>
+                        <span>I Am <span>
                             <ReactTypingEffect text={"Front-end Developer"}
                                                speed={200}
                                                eraseSpeed={200}
                                                typingDelay={1500}
                                                eraseDelay={2000}/>
-                        </span></p>
+                        </span></span>
 
                         <Button name={'Dowloand CV'}
                                 href={'https://github.com/BozhenaVlasova/cv-folder/raw/main/CV_Bozhena_Vlasova.pdf'}/>

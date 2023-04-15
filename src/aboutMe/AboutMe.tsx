@@ -6,8 +6,6 @@ import Button from "../common/components/button/Button";
 import {Fade} from "react-awesome-reveal";
 import {Tilt} from 'react-tilt';
 import {ThemeContext} from "./../App";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faContactCard} from "@fortawesome/free-solid-svg-icons";
 import {Link} from "react-scroll";
 
 const AboutMe = () => {
