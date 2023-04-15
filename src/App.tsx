@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './App.css';
 import Header from "./header/Header";
 import Main from "./main/Main";
@@ -20,8 +20,18 @@ export const ThemeContext = React.createContext<ThemeContextType>({
 
 function App() {
     let [switchColor, setSwitchColor] = useState('dark')
+
+    useEffect(() => {
+        const storedTheme = localStorage.getItem("theme");
+        if (storedTheme) {
+            setSwitchColor(storedTheme);
+        }
+    }, []);
+
     const onClickSwitch = () => {
-        setSwitchColor(switchColor === 'light' ? 'dark' : 'light')
+        const newTheme = switchColor === "light" ? "dark" : "light";
+        setSwitchColor(newTheme)
+        localStorage.setItem("theme", newTheme);
     }
     return (
         <ThemeContext.Provider value={{switchColor, onClickSwitch}}>
