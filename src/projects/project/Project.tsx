@@ -10,12 +10,15 @@ type WorkPropsType = {
 
 const Project = (props: WorkPropsType) => {
     return (
-        <div className={styles.work} style={{backgroundImage: "url("+props.image+")"}}>
+        <div className={styles.work} style={{backgroundImage: "url(" + props.image + ")"}}>
             <div className={styles.info}>
                 <h5 className={styles.title}>{props.name}</h5>
                 {/*<span className={styles.description}>{props.description}</span>*/}
             </div>
-            <a href={props.gitUrl} className={styles.button} target={'_blank'}>Open</a>
+            <div className={styles.buttons}>
+                <a href={''} className={styles.button} target={'_blank'}>Show</a>
+                <a href={props.gitUrl} className={styles.button} target={'_blank'}>Github</a>
+            </div>
         </div>
     );
 };

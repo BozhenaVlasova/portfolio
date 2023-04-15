@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   gap: 10px;
   z-index: 10;
   background-size: cover;
@@ -35,21 +36,25 @@
       color: rgba(255, 255, 255, 0.6);
     }
   }
+  .buttons{
+    display: flex;
 
-  .button {
-    padding: 20px;
-    z-index: 1;
-    background: $bgSecondaryColor;
-    text-align: center;
-    opacity: 0;
-    transition: ease all 0.35s;
-    width: auto;
-    margin: 20px;
-    text-decoration: none;
-    color: $mainTextColor;
+    .button {
+      padding: 20px;
+      z-index: 1;
+      background: $bgSecondaryColor;
+      text-align: center;
+      opacity: 0;
+      transition: ease all 0.35s;
+      width: auto;
+      margin: 20px;
+      text-decoration: none;
+      color: $mainTextColor;
 
-    &:hover {
-      opacity: 1;
+      &:hover {
+        opacity: 1;
+      }
     }
   }
+
 }
