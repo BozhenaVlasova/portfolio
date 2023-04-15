@@ -54,7 +54,7 @@ const Header = () => {
                     <a href={'https://t.me/bozhena_vl'} target={'_blank'}>
                         <img src={telegram} alt={'telegram'}/>
                     </a>
-                    <a href={'https://www.instagram.com'} target={'_blank'}>
+                    <a href={'https://www.instagram.com/_bozhena_v'} target={'_blank'}>
                         <img src={instagram} alt={'instagram'}/>
                     </a>
                     <a href={'https://github.com/BozhenaVlasova'} target={'_blank'}>
