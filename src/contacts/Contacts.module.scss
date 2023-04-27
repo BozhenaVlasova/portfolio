@@ -3,10 +3,14 @@
 
 .dark {
   @include onlyColorBackground($bgColor);
+  input, textarea {
+    @include colorText($mainTextColor);
+  }
 }
 .darkDescriptionAndForm {
   @include switchColor($bgSecondaryColor, $mainTextColor);
 }
+
 .light {
   @include onlyColorBackground($bgLightColor);
 }
