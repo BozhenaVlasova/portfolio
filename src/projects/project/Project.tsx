@@ -5,6 +5,7 @@ type ProjectPropsType = {
     name: string,
     description: string,
     image: string,
+    url: string,
     gitUrl: string
 }
 
@@ -30,7 +31,7 @@ const Project = (props: ProjectPropsType) => {
                         {/*<span className={styles.description}>{props.description}</span>*/}
                     </div>
                     <div className={styles.buttons}>
-                        <a href={''} className={styles.button} target={'_blank'}>Show</a>
+                        <a href={props.url} className={styles.button} target={'_blank'}>Show</a>
                         <a href={props.gitUrl} className={styles.button} target={'_blank'}>Github</a>
                     </div>
                 </>

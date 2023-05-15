@@ -16,7 +16,7 @@ const Projects = () => {
                     <Title name={'My Projects'}/>
                     <div className={styles.projects}>
                         {projects.map(pr => <Project key={pr.id} name={pr.name} description={pr.description}
-                                                     image={pr.image} gitUrl={pr.gitUrl}/>)}
+                                                     image={pr.image} url={pr.url} gitUrl={pr.gitUrl}/>)}
                     </div>
                 </>
             </Fade>
